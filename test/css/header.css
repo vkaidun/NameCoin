@@ -1,0 +1,17 @@
+.header-2 {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--main {
+    background-color: #F1F1F3;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+
+    button {
+        height: 39px;
+    }
+}

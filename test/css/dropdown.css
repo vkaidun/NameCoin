@@ -1,0 +1,34 @@
+/* Dropdown Styles */
+.dropdown {
+}
+
+.dropdown-panel {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 300px; /* Fixed width */
+    width: 300px;
+}
+
+.dropdown.active .dropdown-panel {
+    display: block;
+}
+
+.dropdown-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-panel li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-panel li:hover {
+    background-color: #f2f2f2;
+}

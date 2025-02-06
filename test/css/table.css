@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 11px; /* Reduced font size */
+}
+
+th, td {
+    padding: 6px; /* Reduced padding */
+    font-weight: 700;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr {
+    th:nth-child(3),
+    td:nth-child(3) {
+        text-align: right;
+    }
+}
+
+/* Borders only between rows */
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Border only between rows */
+}
+
+/* Styling for buy and sell rows */
+tr.buy td {
+    color: green;
+
+    &:first-child {
+        color: #121212 !important;
+    }
+}
+
+tr.sell td {
+    color: red;
+
+    &:first-child {
+        color: #121212 !important;
+    }
+}
+
+/* Responsive container */
+.table-container {
+    overflow-x: auto;
+    margin: 0 auto; /* Center the table */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}

@@ -1,0 +1,58 @@
+.cta-section {
+    position: relative;
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        width: 200px;
+    }
+
+    .info {
+        position: relative;
+        z-index: 1;
+    }
+
+    .plus {
+        margin: 0;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    .coins {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        .coin {
+            position: absolute;
+
+            &:nth-child(1) {
+                bottom: 10px;
+                right: 10px;
+            }
+
+            &:nth-child(2) {
+                bottom: 35px;
+                right: 55px;
+            }
+
+
+            &:nth-child(3) {
+                bottom: 15px;
+                right: 105px;
+            }
+
+            &:nth-child(4) {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    }
+}

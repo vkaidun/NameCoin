@@ -1,0 +1,21 @@
+.coin-info {
+    p {
+        font-size: 14px;
+    }
+
+    .top {
+        margin-bottom: 25px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+
+        a {
+            text-decoration: underline;
+            color: #121212;
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.bubbles {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 150px;
+    margin: 0;
+    gap: 10px;
+}
+
+.bubble {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #121212;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    color: #121212;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.bubble.active {
+    color: #222;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.bubble:hover {
+    color: #222;
+}
+
+.bubble[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.active-content {
+    max-width: 200px;
+    margin: 0 auto;
+    padding-top: 30%;
+    transition: all .3s ease-in-out;
+}
